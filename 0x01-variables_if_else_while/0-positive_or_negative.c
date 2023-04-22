@@ -4,8 +4,8 @@
 
 /**
   * main - entry point
-  *description : 'this determines if a number is positive or negative'
-  *return: always 0
+  *Description : 'this determines if a number is positive or negative'
+  *Return: always 0
   */
 int main(void)
 {
