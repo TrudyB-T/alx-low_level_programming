@@ -1,12 +1,15 @@
 #include "main.h"
 
-/*
- * main - Entry point
- * Description : 'prints lowercase alphabets ten times'
+/**
+ * main - Entry poin
+ *
+ * print_alphabet_x10 - prints lowercase alphabets 10 times
+ * Description : 'prints alphabets in lowercase 10 times'
+ *
  * return : always 0
  */
-void print_alphabet_x10(void)
 
+void print_alphabet_x10(void)
 {
 	char t;
 	int n = 0;
