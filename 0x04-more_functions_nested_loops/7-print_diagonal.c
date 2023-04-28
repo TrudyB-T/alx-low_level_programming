@@ -1,16 +1,28 @@
 #include "main.h"
 
 /**
- * print_numbers -  prints the numbers, from 0 to 9
+ * print_diagonal - draws a straight line in the terminal
+ * @n : the number of times the character _ should be printed
  * return : always 0
  */
-void print_numbers(void)
+void print_diagonal(int n)
 {
-        int n;
+	int p, m;
 
-        for (n = 0; n < 10; n++)
-        {
-                _putchar(n + '0');
-        }
-        _putchar('\n');
-} 
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (p = 0; p < n; p++)
+		{
+                for (m = 0; m < p; m++)
+		{
+		       	_putchar(32);
+		}
+		_putchar(92);
+		_putchar('\n');
+		}
+	}
+}
