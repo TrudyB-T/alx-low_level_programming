@@ -5,7 +5,7 @@
  * reverse_array - reverses the content of an array of integers
  * @n : the number of elements of the array
  * @a : the array to be reversed
- * 
+ *
  */
 
 void reverse_array(int *a, int n)
