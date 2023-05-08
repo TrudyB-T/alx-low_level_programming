@@ -3,7 +3,7 @@
 
 
 /**
- * _memcpy - fills memory with a constant byte
+ * _memcpy - copies memory area
  *
  * @src : first memory area to copy from
  * @n : number of bytes to be copied
@@ -15,11 +15,12 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int l = 0;
+	int k = n;
 
-	for (; n > 0; l++)
+	for (; k > l; l++)
 	{
 		src[l] = dest[l];
-		n--;
+		n++;
 	}
 
 	return (dest);
