@@ -27,6 +27,9 @@ char *_strdup(char *str)
 		k++;
 	}
 
+	if (s == NULL)
+		return (NULL);
+
 
 	while (j < k)
 	{
