@@ -15,17 +15,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *s;
 	int n = 0;
-	int o = 0;
+	int o = nmemb * size;
 
 	if (nmemb == 0 && size == 0)
-		return(NULL);
+		return (NULL);
 
-	s = malloc(nmemb * size);
+	s = malloc(o);
 
 		if (s == NULL)
 			return (NULL);
-
-	o = nmemb * size;
 
 	while (n < o)
 	{
