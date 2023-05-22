@@ -5,18 +5,17 @@
  * _sqrt_recursion - returns the natural square root of a number
  * @n : number to calculate the square root of 
  *
- * Return: j
+ * Return: the natural square root of a number
  */
 
 int _sqrt_recursion(int n)
 {
-	int j = 0;
-	int i = j * j;
+	int k = 0;
 
-	if (i > n)
+	if (k * k > n )
 		return (-1);
 
-	if (i == n)
-
-	return (j);
+			if (k * k == n)
+				return (k);
+			return (_sqrt_recursion(k + 1));
 }
