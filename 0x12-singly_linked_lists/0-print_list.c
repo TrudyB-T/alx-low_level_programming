@@ -7,6 +7,7 @@
 /**
  * print_list -  prints all the elements of a list_t list.
  * @list_t: list
+ * @h: pointer
  *
  * Return: always 0
  */
@@ -17,12 +18,12 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		if (h ->str == NULL)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 
 		else
 			printf("[%u] %s\n", h->len, h->str);
-				h = h ->next;
+				h = h->next;
 				num++;
 	}
 	return (num);
