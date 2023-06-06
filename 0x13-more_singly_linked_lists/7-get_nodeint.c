@@ -5,11 +5,10 @@
 #include "lists.h"
 
 /**
- * pop_listint - deletes the head node of a listint_t linked list
- * and returns the head node’s data (n).
+ * get_nodeint_at_index -  returns the nth node of a listint_t linked list.
  * @head: pointer
- *
- * Return: 0 if linked list is empty
+ * @index: parameter
+ * Return: NULL if linked list is empty
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -23,10 +22,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		n++;
 	}
 
-	if (q == NULL)
+	if (q != NULL)
 	{
 		return (q);
 	}
-	else 
+	else
+	{
 		return (NULL);
+	}
 }
