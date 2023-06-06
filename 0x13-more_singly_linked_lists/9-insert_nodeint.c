@@ -24,9 +24,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	}
 
-	nunode->next = *head;
-	*head = nunode;
-	return (nunode);
+	nunode->n = n;
+	nunode->next = NULL;
 
 	if (idx == 0)
 	{
