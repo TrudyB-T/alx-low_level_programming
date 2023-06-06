@@ -5,7 +5,7 @@
 #include "lists.h"
 
 /**
- * free_listint -  prints all the elements of a listint_t list.
+ * free_listint2 - frees a listint_t list.
  * @head: pointer
  *
  * Return: nothing
