@@ -34,7 +34,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (nunode);
 	}
 
-	for (; q && v < idx; n++)
+	for (; q && v < idx; v++)
 	{
 		if (v == idx - 1)
 		{
