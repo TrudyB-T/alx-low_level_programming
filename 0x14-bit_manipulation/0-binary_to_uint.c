@@ -27,7 +27,9 @@ unsigned int binary_to_uint(const char *b)
 		}
 
 		else
+		{
 			num = 2 * num + (b[c] - '0');
+		}
 	}
 
 	return (num);
