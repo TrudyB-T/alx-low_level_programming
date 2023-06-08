@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 			k++;
 		}
 
-		else (k != NULL)
+		else if (k != NULL)
 			_putchar('0');
 	}
 
