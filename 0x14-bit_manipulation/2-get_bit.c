@@ -3,9 +3,10 @@
 
 /**
  * get_bit - returns the value of a bit at a given index.
- * index: index of the bit to be gotten
+ * @index: index of the bit to be gotten
+ * @n :number
  *
- * Returns: the value of the bit at index
+ * Return: the value of the bit at index
  * or -1 if an error occured
  */
 
