@@ -24,10 +24,10 @@ void print_binary(unsigned long int n)
 			k++;
 		}
 
-		else if (k != NULL)
+		else if (k != 0)
 			_putchar('0');
 	}
 
-	if (k == NULL)
+	if (k == 0)
 		_putchar('0');
 }
