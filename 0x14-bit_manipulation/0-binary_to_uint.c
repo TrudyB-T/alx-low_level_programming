@@ -14,9 +14,14 @@ unsigned int binary_to_uint(const char *b)
 	int c = 0;
 	unsigned int num = 0;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
+
 	for (; b[c]; c++)
 	{
-		if (b == NULL || b[c] != '0' || b[c] != '1')
+		if (b[c] != '0' || b[c] != '1')
 		{
 			return (0);
 		}
