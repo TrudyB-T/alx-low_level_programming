@@ -13,6 +13,11 @@ int sum_dlistint(dlistint_t *head)
 	int total = 0;
 	dlistint_t *current = head;
 
+	if (head == NULL)
+	{
+		return (0);
+	}
+
 	for (; current != NULL; current = current->next)
 	{
 		total = total + current->n;
