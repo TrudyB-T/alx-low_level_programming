@@ -12,7 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht = malloc(sizeof(*ht));
 
-	if (ht == NULL)
+	if (ht != NULL)
 	{
 		ht->array = calloc(size, sizeof(*ht->array));
 		if (ht->array)
@@ -24,4 +24,3 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	return (NULL);
 }
-
